@@ -1,0 +1,195 @@
+:root {
+    --primary-color: #003366;     
+    --accent-color: #39ff14;       
+    --light-bg: #f4f4f4;           
+    --text-color: #333;          
+}
+
+body {
+    font-family: 'Arial', sans-serif; 
+    margin: 0;
+    background-color: var(--light-bg);
+    color: var(--text-color);
+}
+header {
+    background-color: var(--primary-color);
+ padding: 10px 30px ;
+    
+    display: flex; 
+    flex-direction: column!important;
+   align-items: center!important;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+    line-height: normal;
+}
+.logo {
+    padding: 0 !important; 
+    margin-bottom: 5px; 
+    display: flex; 
+    align-items: center;
+}
+
+.tiny-logo { 
+   height: 70px !important; 
+    width: auto !important;  
+    display: block !important; 
+    border: none !important;
+    outline: none !important;
+}
+
+nav {
+    width: 100%; 
+    display: flex;
+    justify-content: center!important;
+    margin-top: 5px;
+    padding-top: 5px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left:0 30px;
+    font-size: 1.1em;
+    font-weight: bold; 
+    padding: 5px 12px; 
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+main {
+    padding: 20px;
+}
+
+#hero {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 30px;
+    border-left: 5px solid var(--accent-color); 
+}
+
+#hero h1 {
+    color: var(--primary-color);
+    font-size: 2.5em;
+    margin-top: 0;
+}
+
+#hero p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+h2 {
+    border-bottom: 3px solid var(--accent-color);
+    padding-bottom: 5px;
+    color: var(--primary-color);
+    margin-top: 40px;
+}
+
+.main-logo {
+    display: block; 
+    height: auto; 
+    max-width: 250px; 
+    margin: 0 auto 20px auto; 
+}
+header .logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--accent-color);
+}
+.match-list {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+.match-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1 1 450px; 
+    max-width: 500px;
+    border-top: 5px solid var(--primary-color);
+}
+
+.league-info {
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #888;
+    margin-bottom: 15px;
+    border-bottom: 1px dashed var(--light-bg);
+    padding-bottom: 5px;
+}
+.match-body {
+    padding: 10px 0;
+}
+
+.team-score {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    font-size: 1.5em;
+    padding: 5px 0;
+}
+
+.team-name {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+.score-set {
+    font-size: 2em;
+    font-weight: 900;
+    color: var(--accent-color); 
+    border-left: 3px solid var(--accent-color);
+    padding-left: 10px;
+    margin-left: 20px;
+}
+.set-details {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid var(--light-bg);
+}
+.upcoming-body {
+    text-align: center;
+}
+.team-vs {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin: 15px 0;
+}
+.vs {
+    color: #aaa;
+    margin: 0 10px;
+}
+.time-location {
+    font-size: 1.1em;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+.match-footer {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+    text-align: center;
+}
+.lfg-button {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.lfg-button:hover {
+    background-color: #5eff47;
+}

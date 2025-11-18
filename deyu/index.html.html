@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VOLLEY GO | 排球賽事與社群</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div class="logo">
+        <img src="logo.jpg.jpg" alt="VOLLEY GO Logo" class="tiny-logo"> 
+    </div>
+    
+    <nav>
+        <a href="#home">主頁</a>
+        <a href="#matches">賽事總覽</a>
+        <a href="#ai-consultant">AI 顧問</a>
+        <a href="#video">影音專區</a>
+    </nav>
+</header>
+
+
+<main>
+    <section id="hero">
+        <h1>VOLLEY GO：排球熱情，即刻出發！</h1>
+        <p>匯集職業/企業賽事資訊、球友交流與排球知識的平台。</p>
+    </section>
+
+    <section id="matches">
+        <h2>🔥 最新賽事報告</h2>
+        <div class="match-list">
+            
+            <div class="match-card result-card">
+                <div class="league-info">企業排球聯賽 (TVL)</div>
+                <div class="match-body">
+                    <div class="team-score team-home">
+                        <span class="team-name">屏東台電 (主)</span>
+                        <span class="score-set">3</span>
+                    </div>
+                    <div class="team-score team-away">
+                        <span class="team-name">臺北鯨華 (客)</span>
+                        <span class="score-set">1</span>
+                    </div>
+                    
+                    <div class="set-details">
+                        <span class="label">局數：</span>
+                        <span class="set">25-23</span>, 
+                        <span class="set">25-20</span>, 
+                        <span class="set">23-25</span>, 
+                        <span class="set">25-18</span>
+                    </div>
+                </div>
+                
+                <div class="match-footer">
+                    <p><strong>精華亮點：</strong> 台電強力主攻手單場 30 分，穩守勝局！</p>
+                    <button class="lfg-button" id="toggle-comments-1">💬 留言揪團 (12)</button>
+                </div>
+                
+                <div class="comment-section" id="comments-match-1">
+                    <h3>💬 賽事留言與揪團區</h3>
+                    
+                    <div class="comment-list" id="comment-list-1">
+                        <div class="comment">
+                            <p><strong>球友A (揪團中):</strong> 恭喜台電！請問有沒有人這週六想在台北找場地打友誼賽？缺兩位中手！#找球友 #台北</p>
+                            <span class="comment-time">2025/11/17 10:00</span>
+                        </div>
+                        <div class="comment">
+                            <p><strong>V編:</strong> 這場比賽真的精彩，MVP 無庸置疑！</p>
+                            <span class="comment-time">2025/11/17 09:30</span>
+                        </div>
+                    </div>
+                    
+                    <div class="new-comment-input">
+                        <input type="text" id="comment-input-1" placeholder="發布留言或揪團資訊...">
+                        <button class="post-button" data-match-id="1">發布留言</button>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="match-card upcoming-card">
+                <div class="league-info">職業排球聯盟 (TPVL) - 男子組</div>
+                <div class="match-body upcoming-body">
+                    <div class="team-vs">
+                        <span class="team-name">臺中連莊</span> 
+                        <span class="vs">VS</span> 
+                        <span class="team-name">臺北伊斯特</span>
+                    </div>
+                    <div class="time-location">
+                        <p>📅 **時間：** 2025/12/01 (日) 14:30</p>
+                        <p>📍 **地點：** 臺北市立大學天母校區體育館</p>
+                    </div>
+                </div>
+                <div class="match-footer">
+                    <button class="lfg-button primary">🎫 購票 / 集合觀賽揪團</button>
+                </div>
+            </div>
+            </div>
+    </section>
+    
+    <section id="ai-consultant">
+        <h2>🤖 AI 排球顧問</h2>
+        
+        <div class="ai-container">
+            <div id="chat-history" class="chat-history">
+                <div class="message ai-message">
+                    <p><strong>AI 顧問：</strong>您好！我是您的排球知識庫。請問您想了解排球規則、賽事數據還是球員資訊呢？</p>
+                </div>
+            </div>
+            
+            <div class="chat-input">
+                <input type="text" id="user-input" placeholder="詢問排球問題，例如：攔網後的擊球權？">
+                <button id="send-button">送出</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="video">
+        <h2>📺 精彩影音專區</h2>
+        
+      <div class="video-item">
+    <h3>企業聯賽精華</h3>
+    <iframe width="100%" height="250" src="https://www.youtube.com/embed/gT4I06H6I7I" 
+            title="排球精華" frameborder="0" allowfullscreen></iframe>
+</div>
+
+            <div class="video-item">
+                <h3>國際賽事剪輯</h3>
+                <iframe width="100%" height="250" src="https://www.youtube.com/embed/blAaDmRBjHk?si=1hWlY6hD9w6cQ4kF" 
+                        title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+            </div>
+            
+            <div class="video-item">
+                <h3>球員/戰術分析</h3>
+                <div class="placeholder">待新增影片...</div>
+            </div>
+        </div>
+    </section>
+    </main>
+
+<script src="script.js"></script>
+</body>
+</html>
