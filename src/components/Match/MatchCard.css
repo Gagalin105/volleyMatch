@@ -1,0 +1,205 @@
+.match-card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  flex: 1 1 450px;
+  max-width: 550px;
+  border-top: 5px solid var(--primary-color);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.match-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.league-info {
+  font-size: 0.9em;
+  font-weight: bold;
+  color: #888;
+  padding: 15px 20px;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #e9ecef;
+}
+
+/* Tab 切換按鈕 */
+.match-tabs {
+  display: flex;
+  background-color: #f8f9fa;
+  border-bottom: 2px solid #e9ecef;
+}
+
+.tab-button {
+  flex: 1;
+  padding: 12px 16px;
+  border: none;
+  background-color: transparent;
+  color: #6c757d;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  border-bottom: 3px solid transparent;
+}
+
+.tab-button:hover {
+  background-color: #e9ecef;
+  color: var(--primary-color);
+}
+
+.tab-button.active {
+  color: var(--primary-color);
+  background-color: white;
+  border-bottom-color: var(--accent-color);
+}
+
+/* 賽事資訊區 */
+.match-body {
+  padding: 25px;
+  min-height: 250px;
+}
+
+.team-score {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5em;
+  padding: 10px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.team-score:last-of-type {
+  border-bottom: none;
+}
+
+.team-name {
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.score-set {
+  font-size: 2em;
+  font-weight: 900;
+  color: var(--accent-color);
+  border-left: 3px solid var(--accent-color);
+  padding-left: 15px;
+  margin-left: 20px;
+}
+
+.set-details {
+  font-size: 0.9em;
+  color: #666;
+  margin-top: 15px;
+  padding: 12px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+.set-details .label {
+  font-weight: 600;
+  margin-right: 8px;
+}
+
+.set {
+  padding: 4px 8px;
+  background-color: white;
+  border-radius: 4px;
+  margin: 0 4px;
+}
+
+/* 精華亮點 */
+.match-highlight {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  margin-top: 15px;
+  padding: 15px;
+  background: linear-gradient(135deg, #fff9e6 0%, #fffef0 100%);
+  border-left: 4px solid #ffd700;
+  border-radius: 8px;
+}
+
+.highlight-icon {
+  font-size: 1.5em;
+  flex-shrink: 0;
+}
+
+.match-highlight p {
+  margin: 0;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* 即將進行的比賽 */
+.team-vs {
+  font-size: 2em;
+  font-weight: bold;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.vs {
+  color: #aaa;
+  margin: 0 15px;
+  font-weight: normal;
+}
+
+.time-location {
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.time-location p {
+  margin: 8px 0;
+  color: var(--text-color);
+  font-size: 1.05em;
+}
+
+/* 行動按鈕 */
+.match-footer {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.action-button {
+  flex: 1;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 1em;
+}
+
+.action-button.primary {
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+}
+
+.action-button.primary:hover {
+  background-color: #5eff47;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(57, 255, 20, 0.3);
+}
+
+.action-button.secondary {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.action-button.secondary:hover {
+  background-color: #004080;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 51, 102, 0.3);
+}
+
+/* 留言區 Tab 內容 */
+.comments-tab-content {
+  padding: 0;
+  max-height: 500px;
+  overflow-y: auto;
+}
